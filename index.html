@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Resize And Compress Image with Javascript</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+
+    <div class="wrap">
+      <div class="container">
+        <div class="upload-wraper">
+          <div class="upload-img-box">
+            <input type="file" accept="images/*" hidden>
+            <img src="images/upload-icon.png" alt="" class="upload-icon">
+            <p>Browse File to Upload</p>
+          </div>
+          <div class="upload-content">
+            <div class="row sizes">
+              <div class="col-md-6 width">
+                <label for="">Width</label>
+                <input type="number">
+              </div>
+              <div class="col-md-6 height">
+                <label for="">Height</label>
+                <input type="number">
+              </div>
+            </div>
+            <div class="row checkboxes">
+              <div class="col-md-6 ratio">
+                <input type="checkbox" id="ratio" checked>
+                <label for="ratio">Lock Aspect ratio</label>
+              </div>
+              <div class="col-md-6 quality">
+                <input type="checkbox" id="quality">
+                <label for="quality">Reduced Quality</label>
+              </div>
+            </div>
+            <button class="btn-stlye">Download Image</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>
